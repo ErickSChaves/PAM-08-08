@@ -5,7 +5,7 @@ const DATA =
         Id:'01',
         Nome:'Creed III',
         Nota:'9.3',
-        Imagem:'Creed.jpg'
+        Imagem:'6.jpg'
 
     },
 
@@ -14,7 +14,7 @@ const DATA =
         Id:'02',
         Nome:'Pânico 6',
         Nota:'9.0',
-        Imagem:'panico.jpg'
+        Imagem:'13.jpg'
     
         },
 
@@ -23,7 +23,7 @@ const DATA =
          Id:'03',
         Nome:'John Wick 4',
          Nota:'9.6',
-        Imagem:'john.jpg'
+        Imagem:'9.jpg'
         
      },
 
@@ -33,7 +33,7 @@ const DATA =
          Id:'04',
          Nome:'Primeira Comunhão',
          Nota:'7.4',
-         Imagem:'comunhao.jpg'
+         Imagem:'5.jpg'
             
     },
 
@@ -42,7 +42,7 @@ const DATA =
         Id:'05',
         Nome:'M3GAN',
         Nota:'8.4',
-        Imagem:'megan.jpg'
+        Imagem:'12.jpg'
                 
     },
 
@@ -52,7 +52,7 @@ const DATA =
         Id:'06',
         Nome:'Homem-Formiga e a Vespa',
         Nota:'8.2',
-        Imagem:'homem.jpg'
+        Imagem:'8.jpg'
                     
     },
 
@@ -62,7 +62,7 @@ const DATA =
         Id:'07',
         Nome:'Marlowe',
         Nota:'5.5',
-        Imagem:'Marlowe.jpg'
+        Imagem:'11.jpg'
                         
     },
 
@@ -71,7 +71,7 @@ const DATA =
         Id:'08',
         Nome:'Super Mario Bros',
         Nota:'9.5',
-        Imagem:'mario.jpg'
+        Imagem:'10.jpg'
                             
     },
 
@@ -81,7 +81,7 @@ const DATA =
         Id:'09',
         Nome:'Dungeons & Dragons',
         Nota:'9.5',
-        Imagem:'dun.jpg'
+        Imagem:'7.jpg'
                                 
     },
 
@@ -91,7 +91,7 @@ const DATA =
         Id:'10',
         Nome:'Shazam! Fúria dos Deuses',
         Nota:'8.9',
-        Imagem:'sha.jpg'
+        Imagem:'14.jpg'
                                     
     },
 ]
