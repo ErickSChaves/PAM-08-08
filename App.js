@@ -6,6 +6,8 @@ import Filmes from './src/data/movies'
 import Header from './src/components/header';
 import SearchBar from './src/components/searchbar';
 import CardFilmes from './src/components/cardFilmes';
+import CardSeries from './src/components/cardSeries';
+import Series from './src/data/series';
 
 export default function App() {
   return (
@@ -22,13 +24,43 @@ export default function App() {
         keyExtractor = {(item) => item.Id}
         renderItem = {({item}) => (
 
-            <CardFilmes></CardFilmes>
+            <CardFilmes
+            Nome = {item.Nome} 
+            Nota = {item.Nota}
+            Imagem = {item.Imagem}
+            >
+             
+            </CardFilmes>
 
         )}
         
         
      />
      </View>
+
+     <View style = {{width:'90%'}}>
+     <FlatList
+     
+        horizontal = {true}
+        data = {Series}
+        keyExtractor = {(item) => item.Id}
+        renderItem = {({item}) => (
+
+          <CardSeries
+          Nome = {item.Nome} 
+          Nota = {item.Nota}
+          Imagem = {item.Imagem}
+          Temporadas = {item.Temporadas}
+          >
+
+          </CardSeries>
+        )}
+        
+        
+     />
+     </View>
+          
+    
 
     </View>
   );
