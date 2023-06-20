@@ -1,13 +1,16 @@
 import React from "react";
 import {Image, Text, TouchableOpacity} from 'react-native'
 import styles from "./style";
+import { useNavigation } from "@react-navigation/native";
 
 
 export default function CardFilmes({Nome, Imagem, Nota}) {
 
+    const Navigation = useNavigation();
+
     return(
 
-        <TouchableOpacity style = {styles.ContainerFilmes}>
+        <TouchableOpacity onPress = {() => Navigation.navigate('Details')} style = {styles.ContainerFilmes}>
 
             <Image style = {styles.ImagemFilmes} source = {require (`../../Img/${Imagem}`)}/>
             <Text style = {styles.TituloFilmes}>{Nome}</Text>
