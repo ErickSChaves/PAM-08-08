@@ -6,11 +6,10 @@ const styles= StyleSheet.create({
     containerSearch:{
         flexDirection:'row',
         width:'90%',
-        backgroundColor:"white",
+        backgroundColor:"#F74B1C",
         marginTop:30,
-       
         alignItems:"center",
-        borderRadius:3
+        borderRadius:20
      
 
     },
@@ -18,7 +17,9 @@ const styles= StyleSheet.create({
         
         height:35,
         width:'100%',
-        marginLeft:5
+        marginLeft:5,
+        backgroundColor:"white",
+        borderRadius:20
         
 
     }

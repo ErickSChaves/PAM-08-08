@@ -1,14 +1,38 @@
 import React from "react";
-import {View, Text} from "react-native"
+import {View, Text, Image} from "react-native"
+import { useRoute } from "@react-navigation/native";
+import styles from "./style";
+
+import Stars from 'react-native-stars'
+import { FontAwesome } from '@expo/vector-icons';
 
 
 export default function Details() {
 
+    const route = useRoute();
+
     return(
 
-        <View>
+        <View style={styles.container}>
 
-            <Text> Essa é a tela de detalhes</Text>
+            <Image style = {styles.ImagemFilmes} source = {require (`../../Img/${route.params.Imagem}`)}/>
+
+            <Text style = {styles.TituloFilmes}>{route.params.Nome}</Text>
+
+            <Stars
+                default={10}
+                count={5}
+                half={true}
+                //starSize={[style.fullStar.size, style.fullStar.size]}
+                disabled={true}
+                fullStar={<FontAwesome name="star" size={25} color={'#FFD700'} />}
+                emptyStar={<FontAwesome name="star-o" size={25} color={'#fff'} />}
+                halfStar={<FontAwesome name="star-half-empty" size={25} color={'orange'} />}
+            />
+
+            <Text style = {styles.NotaFilmes}>{route.params.Nota}</Text>
+
+            <Text style = {styles.TemporadasSeries}>{route.params.Temporadas}</Text>
 
         </View>
 

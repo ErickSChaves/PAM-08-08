@@ -14,9 +14,19 @@ const styles = StyleSheet.create({
         fontSize:30,
         color:'white',
         marginTop:15,
-        marginLeft:-100,
+        marginLeft:-170,
+        fontWeight:'bold'
+    },
+
+    textFilmes:{
+        fontSize:30,
+        color:'white',
+        marginTop:14,
+        marginLeft:-200,
         fontWeight:'bold'
     }
+
+    
 
 })
 

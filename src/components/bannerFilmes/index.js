@@ -15,6 +15,9 @@ export default function BannerFilmes() {
 
             <Image style = {styles.imagemBanner} source = {require(`../../Img/${imagem}.jpg`)}/>
 
+            <Text style = {styles.textFilmes}> Filmes </Text>
+            
+
         </>
 
     );

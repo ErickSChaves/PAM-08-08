@@ -48,16 +48,16 @@ const Series =
 
     {
         Id:6,
-        Nome:"aa",
-        Nota:"a",
+        Nome:"Echoes",
+        Nota:8.1,
         Imagem:"Series/6.jpg",
-        Temporadas:"aaaa"
+        Temporadas:"1 Temporada"
     },
 
 
     {
         Id:7,
-        Nome:"Echoes",
+        Nome:"Revenges",
         Nota:8.1,
         Imagem:"Series/7.jpg",
         Temporadas:"1 Temporada"

@@ -8,14 +8,14 @@ const estilo = StyleSheet.create({
         flexDirection:"row",
         justifyContent:"space-between",
         alignItems:"center",
-        marginTop:8,
+        marginTop:20,
         marginLeft:10
     },
     textHeader :{
         fontSize:25,
         color:"white",
         fontWeight:"bold",
-        marginRight:75
+        marginRight:"center"
     }
 
 

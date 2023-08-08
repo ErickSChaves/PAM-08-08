@@ -11,10 +11,16 @@ import Series from './src/data/series';
 
 import Routes from './src/routers';
 
+import { NavigationContainer } from "@react-navigation/native";
+
+import 'react-native-gesture-handler' 
+
 export default function App() {
   return (
    
+    <NavigationContainer>
     <Routes></Routes>
+    </NavigationContainer>
 
   );
 }
