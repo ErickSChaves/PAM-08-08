@@ -78,6 +78,7 @@ export default function App() {
               Nome = {item.title} 
               Nota = {item.vote_average}
               Imagem = {item.poster_path}
+              Descricao = {item.overview}
               >
               
               </CardFilmes>
@@ -99,6 +100,7 @@ export default function App() {
             Nome = {item.name} 
             Nota = {item.vote_average}
             Imagem = {item.poster_path}
+            Descricao = {item.overview}
             >
 
             </CardSeries>

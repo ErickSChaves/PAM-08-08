@@ -29,6 +29,7 @@ const styles = StyleSheet.create({
         paddingTop:8,
         marginLeft: 'center',
         margin:'-100px',
+        marginBottom:'2vh',
 
     },
 
@@ -44,13 +45,14 @@ const styles = StyleSheet.create({
         color: 'white',
         paddingLeft:4,
         marginLeft: 'center',  
-        margin:'100px',
+       
+        marginTop:'4px',
 
     },
 
 
 
-    TemporadasSeries:{
+    Descricao:{
 
         display:'flex',
         justifyContent:'center',
@@ -60,6 +62,10 @@ const styles = StyleSheet.create({
         paddingLeft:4,
         marginLeft: 'center',  
         margin:'-100px',
+        width:'75%',
+        marginTop:1
+        8
+        
 
     },
 
@@ -71,7 +77,8 @@ const styles = StyleSheet.create({
           
           
         },
-        
+
+       
 
 
 })

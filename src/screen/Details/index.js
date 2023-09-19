@@ -15,7 +15,7 @@ export default function Details() {
 
         <View style={styles.container}>
 
-            <Image style = {styles.ImagemFilmes} source = {require (`../../Img/${route.params.Imagem}`)}/>
+            <Image style = {styles.ImagemFilmes} source = {{uri: `https://image.tmdb.org/t/p/original/${route.params.Imagem}`}}/>
 
             <Text style = {styles.TituloFilmes}>{route.params.Nome}</Text>
 
@@ -32,7 +32,7 @@ export default function Details() {
 
             <Text style = {styles.NotaFilmes}>{route.params.Nota}</Text>
 
-            <Text style = {styles.TemporadasSeries}>{route.params.Temporadas}</Text>
+            <Text style = {styles.Descricao}>{route.params.Descricao}</Text>
 
         </View>
 
