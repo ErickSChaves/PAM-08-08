@@ -12,7 +12,7 @@ export default function CardSeries({Nome, Imagem, Nota, Temporadas}) {
 
         <TouchableOpacity onPress = {() => Navigation.navigate('Details', {Imagem:Imagem, Nome:Nome, Nota:Nota, Temporadas:Temporadas})} style = {styles.ContainerSeries}>
 
-            <Image style = {styles.ImagemSeries} source = {require (`../../Img/${Imagem}`)}/>
+            <Image style = {styles.ImagemSeries} source = {{uri: `https://image.tmdb.org/t/p/original/${Imagem}`}}/>
             <Text style = {styles.TituloSeries}>{Nome}</Text>
             <Text style = {styles.NotaSeries}>{Nota}</Text>
             <Text style = {styles.TemporadasSeries}>{Temporadas}</Text>

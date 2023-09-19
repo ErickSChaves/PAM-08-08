@@ -7,10 +7,59 @@ import SearchBar from  '../../components/searchbar';
 import CardFilmes from '../../components/cardFilmes';
 import CardSeries from '../../components/cardSeries';
 import Series from '../../data/series';
+import React,{useEffect, useState} from 'react';
 
 
 
 export default function App() {
+
+  const [movies,setMovies] = useState([]);
+  const [series,setSeries] = useState([]);
+
+  useEffect(()=>{
+
+    async function getMovies(){
+
+      try{
+
+      const response = await fetch("https://api.themoviedb.org/3/movie/popular?api_key=2f4660be84fe257d8514f6ae20e88410&language=pt-BR")
+
+      const data = await response.json();
+
+      console.log(data.results)
+      setMovies(data.results)
+
+      }catch(error){
+        console.error("REQUISIÇÃO FALHOU",error)
+      }
+    }
+
+    getMovies();
+
+  },[])
+
+  useEffect(()=>{
+
+    async function getSeries(){
+
+      try{
+
+      const response = await fetch("https://api.themoviedb.org/3/tv/popular?api_key=2f4660be84fe257d8514f6ae20e88410&language=pt-BR")
+
+      const data = await response.json();
+
+      console.log(data.results)
+      setSeries(data.results)
+
+      }catch(error){
+        console.error("REQUISIÇÃO FALHOU",error)
+      }
+    }
+
+    getSeries();
+
+  },[])
+
   return (
    
     <View style={styles.container}>
@@ -22,14 +71,13 @@ export default function App() {
       <FlatList
       
           horizontal = {true}
-          data = {Filmes}
-          keyExtractor = {(item) => item.Id}
+          data = {movies}
           renderItem = {({item}) => (
 
               <CardFilmes
-              Nome = {item.Nome} 
-              Nota = {item.Nota}
-              Imagem = {item.Imagem}
+              Nome = {item.title} 
+              Nota = {item.vote_average}
+              Imagem = {item.poster_path}
               >
               
               </CardFilmes>
@@ -44,15 +92,13 @@ export default function App() {
       <FlatList
       
           horizontal = {true}
-          data = {Series}
-          keyExtractor = {(item) => item.Id}
+          data = {series}
           renderItem = {({item}) => (
 
             <CardSeries
-            Nome = {item.Nome} 
-            Nota = {item.Nota}
-            Imagem = {item.Imagem}
-            Temporadas = {item.Temporadas}
+            Nome = {item.name} 
+            Nota = {item.vote_average}
+            Imagem = {item.poster_path}
             >
 
             </CardSeries>
@@ -72,8 +118,8 @@ const styles = StyleSheet.create({
   container: {
     flex:1,
     backgroundColor: '#F76B1C',
-    alignItems:"center"
-    
+    alignItems:"center",
+    overflow: 'scroll'
     
   },
 });

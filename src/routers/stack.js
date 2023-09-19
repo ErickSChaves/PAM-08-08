@@ -4,7 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import Home from '../screen/home'
 import Details from '../screen/Details'
 
-export default function Routes() {
+export default function Stack() {
 
     const stack =  createStackNavigator();
 

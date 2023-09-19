@@ -11,7 +11,7 @@ export default function Routers(){
 
             <Drawer.Navigator>
 
-                <Drawer.Screen name = 'home' component = {Stack}/>    
+                <Drawer.Screen name = 'home' component = {Stack} />    
                 <Drawer.Screen name = 'Sobre' component = {About}/>
 
             </Drawer.Navigator>

@@ -15,7 +15,9 @@ const estilo = StyleSheet.create({
         fontSize:25,
         color:"white",
         fontWeight:"bold",
-        marginRight:"center"
+        marginRight:"center",
+     //   marginTop:40
+        
     }
 
 
